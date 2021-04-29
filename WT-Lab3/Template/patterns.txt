@@ -1,0 +1,12 @@
+/{DATE}/
+date
+d-m-Y
+/{TIME}/
+date
+H:i:s
+/{RUSTEXT}/
+
+КАКОЙ-ТО ТЕКСТ
+/{RECOMEND_PRODUCTS}/
+
+Рекомендуемые продукты

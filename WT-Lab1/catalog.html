@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/catalog_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Каталог</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="header-logo"><a href="index.html"><img src="assets/images/main/logo.png"></a></div>
+            <nav>
+                <ul class="nav">
+                    <li><a class="nav-link" href="index.html">Главная</a></li>
+                    <li><a class="nav-link" href="about.html">О нас</a></li>
+                    <li><a class="nav-link" href="catalog.html">Каталог</a></li>
+                    <li><a class="nav-link" href="news.html">Новости</a></li>
+                    <li><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog-inner">
+                <nav class="filter">
+                    <div class="filter-category">Производитель</div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="ASUS" name="ASUS" value="no">
+                            <label for="ASUS">ASUS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="Lenovo" name="Lenovo" value="no">
+                            <label for="Lenovo">Lenovo</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="HP" name="HP" value="no">
+                            <label for="HP">HP</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="Acer" name="Acer" value="no">
+                            <label for="Acer">Acer</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="Dell" name="Dell" value="no">
+                            <label for="Dell">Dell</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="MSI" name="MSI" value="no">
+                            <label for="MSI">MSI</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="Xiaomi" name="Xiaomi" value="no">
+                            <label for="Xiaomi">Xiaomi</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="Huawei" name="Huawei" value="no">
+                            <label for="Huawei">Huawei</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="HONOR" name="HONOR" value="no">
+                            <label for="HONOR">HONOR</label>
+                        </li>
+                    </ul>
+
+                    <div class="filter-category">Разрешение экрана</div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="HD" name="HD" value="no">
+                            <label for="HD">HD/HD+ (768p/900p)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="FHD" name="FHD" value="no">
+                            <label for="FHD">Full HD (1080p)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="QHD" name="QHD" value="no">
+                            <label for="QHD">QHD (1440p)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="Retina" name="Retina" value="no">
+                            <label for="Retina">Retina</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="QHD+" name="QHD+" value="no">
+                            <label for="QHD+">QHD+ (1800p)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="UHD" name="UHD" value="no">
+                            <label for="UHD">4K UHD (2160p)</label>
+                        </li>
+                    </ul>
+
+                    <div class="filter-category">Оперативная память</div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="4GB" name="4GB" value="no">
+                            <label for="4GB">менее 4 ГБ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="6GB" name="6GB" value="no">
+                            <label for="6GB">4-6 ГБ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="12GB" name="12GB" value="no">
+                            <label for="12GB">8-12 ГБ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="16GB" name="16GB" value="no">
+                            <label for="16GB">16-24 ГБ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="32GB" name="32GB" value="no">
+                            <label for="32GB">32 ГБ и более</label>
+                        </li>
+                    </ul>
+
+                    <div class="filter-category">Диагональ экрана</div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="12d" name="12d" value="no">
+                            <label for="12d">менее 12"</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="13d" name="13d" value="no">
+                            <label for="13d">12-13"</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="14d" name="14d" value="no">
+                            <label for="14d">13.3-14"</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="15d" name="15d" value="no">
+                            <label for="15d">15"</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="17d" name="17d" value="no">
+                            <label for="17d">17"</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="custom-checkbox" id="18d" name="18d" value="no">
+                            <label for="18d">18" и более</label>
+                        </li>
+                    </ul>
+
+                </nav>
+
+                <div class="products">
+                    <div class="product-section">
+                        <div class="product-img">
+                            <img src="assets/images/products/1.jpeg" alt="">
+                        </div>
+                        <div class="product-header">
+                            <span class="product-title"><a href="#">ASUS TUF Gaming F15 FX506LI-HN012</a></span>
+                            <div class="product-description">15.6" 1920 x 1080 IPS, несенсорный, Intel Core i5 10300H 2500 МГц, 8 ГБ, SSD 512 ГБ, граф. адаптер: NVIDIA GeForce GTX 1650 Ti 4 ГБ, без ОС, цвет крышки черный</div>
+                        </div>
+                        <h3 class="product-cost">2590,00 р.</h3>
+                        <a class="buy-button" href="#">Купить</a>
+                    </div>
+
+                    <div class="product-section">
+                        <div class="product-img">
+                            <img src="assets/images/products/2.jpeg" alt="">
+                        </div>
+                        <div class="product-header">
+                            <span class="product-title"><a href="#">Huawei MateBook D 15 AMD Boh-WAQ9R</a></span>
+                            <div class="product-description">15.6" 1920 x 1080 IPS, несенсорный, AMD Ryzen 5 3500U 2100 МГц, 8 ГБ, SSD 256 ГБ, граф. адаптер: встроенный, Windows 10, цвет крышки серебристый</div>
+                        </div>
+                        <h3 class="product-cost">2590,00 р.</h3>
+                        <a class="buy-button" href="#">Купить</a>
+                    </div>
+
+                    <div class="product-section">
+                        <div class="product-img">
+                            <img src="assets/images/products/3.jpeg" alt="">
+                        </div>
+                        <div class="product-header">
+                            <span class="product-title"><a href="#">HP Gaming Pavilion 15-dk1029ur 232C8EA</a></span>
+                            <div class="product-description">15.6" 1920 x 1080 IPS, несенсорный, Intel Core i5 10300H 2500 МГц, 16 ГБ, SSD 1024 ГБ, граф. адаптер: NVIDIA GeForce RTX 2060 Max-Q 6 ГБ, без ОС, цвет крышки черный/зеленый</div>
+                        </div>
+                        <h3 class="product-cost">3381,72 р.</h3>
+                        <a class="buy-button" href="#">Купить</a>
+                    </div>
+
+                    <div class="product-section">
+                        <div class="product-img">
+                            <img src="assets/images/products/4.jpeg" alt="">
+                        </div>
+                        <div class="product-header">
+                            <span class="product-title"><a href="#">HONOR MagicBook 14 2020 53010VTY</a></span>
+                            <div class="product-description">14.0" 1920 x 1080 IPS, несенсорный, AMD Ryzen 5 3500U 2100 МГц, 8 ГБ, SSD 512 ГБ, граф. адаптер: встроенный, Windows 10, цвет крышки темно-серый</div>
+                        </div>
+                        <h3 class="product-cost">1927,61 р.</h3>
+                        <a class="buy-button" href="#">Купить</a>
+                    </div>
+
+                    <div class="product-section">
+                        <div class="product-img">
+                            <img src="assets/images/products/5.jpeg" alt="">
+                        </div>
+                        <div class="product-header">
+                            <span class="product-title"><a href="#">Lenovo IdeaPad 5 15IIL05 81YK006HRE</a></span>
+                            <div class="product-description">15.6" 1920 x 1080 IPS, несенсорный, Intel Core i5 1035G1 1000 МГц, 8 ГБ, SSD 512 ГБ, граф. адаптер: NVIDIA GeForce MX350 2 ГБ, без ОС, цвет крышки темно-серый</div>
+                        </div>
+                        <h3 class="product-cost">2090,00 р.</h3>
+                        <a class="buy-button" href="#">Купить</a>
+                    </div>
+
+                    <div class="product-section">
+                        <div class="product-img">
+                            <img src="assets/images/products/6.jpeg" alt="">
+                        </div>
+                        <div class="product-header">
+                            <span class="product-title"><a href="#">HP 14s-fq0035ur 24C07EA</a></span>
+                            <div class="product-description">14.0" 1920 x 1080 IPS, несенсорный, AMD Ryzen 3 4300U 2700 МГц, 8 ГБ, SSD 512 ГБ, граф. адаптер: встроенный, без ОС, цвет крышки серебристый</div>
+                        </div>
+                        <h3 class="product-cost">1457,15 р.</h3>
+                        <a class="buy-button" href="#">Купить</a>
+                    </div>
+
+                    <div class="product-section">
+                        <div class="product-img">
+                            <img src="assets/images/products/7.jpeg" alt="">
+                        </div>
+                        <div class="product-header">
+                            <span class="product-title"><a href="#">ASUS Zenbook UX433FQ-A5081T</a></span>
+                            <div class="product-description">14.0" 1920 x 1080 IPS, несенсорный, Intel Core i5 10210U 1600 МГц, 8 ГБ, SSD 256 ГБ, граф. адаптер: NVIDIA GeForce MX350 2 ГБ, Windows 10, цвет крышки темно-синий</div>
+                        </div>
+                        <h3 class="product-cost">2677,09 р.</h3>
+                        <a class="buy-button" href="#">Купить</a>
+                    </div>
+
+                    <div class="product-section">
+                        <div class="product-img">
+                            <img src="assets/images/products/8.jpeg" alt="">
+                        </div>
+                        <div class="product-header">
+                            <span class="product-title"><a href="#">ASUS ROG Strix G15 G512LV-HN154</a></span>
+                            <div class="product-description">15.6" 1920 x 1080 IPS, несенсорный, Intel Core i7 10750H 2600 МГц, 16 ГБ, SSD 512 ГБ, граф. адаптер: NVIDIA GeForce RTX 2060 6 ГБ, без ОС, цвет крышки черный</div>
+                        </div>
+                        <h3 class="product-cost">3676,49 р.</h3>
+                        <a class="buy-button" href="#">Купить</a>
+                    </div>
+
+                    <div class="product-section">
+                        <div class="product-img">
+                            <img src="assets/images/products/9.jpeg" alt="">
+                        </div>
+                        <div class="product-header">
+                            <span class="product-title"><a href="#">Xiaomi RedmiBook 16 JYU4275CN</a></span>
+                            <div class="product-description">16.1" 1920 x 1080 IPS, несенсорный, AMD Ryzen 5 4500U 2300 МГц, 8 ГБ, SSD 512 ГБ, граф. адаптер: встроенный, Windows 10, цвет крышки темно-серый</div>
+                        </div>
+                        <h3 class="product-cost">2168,00 р.</h3>
+                        <a class="buy-button" href="#">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <div class="footer-col-title">О нас</div>
+                <div class="footer-nav">
+                    <div class="footer-nav-link">
+                        <a class="footer-nav-link" href="#">Кто мы</a>
+                        <a class="footer-nav-link" href="#">Работать с нами</a>
+                        <a class="footer-nav-link" href="#">Стать поставщиком</a>
+                        <a class="footer-nav-link" href="#">Наши устройства</a>
+                        <a class="footer-nav-link" href="#">Партнерская программа</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Полезные ссылки</div>
+                <div class="footer-nav">
+                    <div class="footer-nav-link">
+                        <a class="footer-nav-link" href="#">Связаться с нами</a>
+                        <a class="footer-nav-link" href="#">FAQs</a>
+                        <a class="footer-nav-link" href="#">Условия и положения</a>
+                        <a class="footer-nav-link" href="#">Политика возврата</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Онлайн шоппинг</div>
+                <div class="footer-nav">
+                    <div class="footer-nav-link">
+                        <a class="footer-nav-link" href="#">Подарочные карты</a>
+                        <a class="footer-nav-link" href="#">Электроника</a>
+                        <a class="footer-nav-link" href="#">Аксессуары</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Мы в соцсетях</div>
+                <div class="footer-nav">
+                    <div class="footer-nav-link">
+                        <a class="footer-nav-link" href="#">Facebook</a>
+                        <a class="footer-nav-link" href="#">Instagram</a>
+                        <a class="footer-nav-link" href="#">Twitter</a>
+                        <a class="footer-nav-link" href="#">VK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright © 2021 <span>iCore.com</span>. All rights reserved.</div>
+    </div>
+</footer>
+
+</body>
+</html>

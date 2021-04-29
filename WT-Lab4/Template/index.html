@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="iCore.com - магазин ноутбуков">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>iCore</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="header-logo"><a href="index.html"><img src="assets/images/main/logo.png"></a></div>
+            <nav>
+                <ul class="nav">
+                    <li><a class="nav-link" href="index.html">Главная</a></li>
+                    <li><a class="nav-link" href="#">О нас</a></li>
+                    <li><a class="nav-link" href="#">Каталог</a></li>
+                    <li><a class="nav-link" href="#">Новости</a></li>
+                    <li><a class="nav-link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="intro">
+        <div class="container">
+            <div class="intro-inner">
+                <div class="intro-header">
+                    <h1 class="intro-subtitle">{FILE="1.txt"}</h1>
+                    <h2 class="intro-title">{VAR="hello"}</h2>
+                    <a class="button" href="catalog.html">Каталог товаров {DB="2"}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2>{IF "2">"3"} 2 > 3 {ELSE} 2 < 3 {ENDIF}</h2>
+                    <h2>{IF "1"=="1"} 1 = 1 {ENDIF}</h2>
+                    <h2>{CONFIG="hello"}</h2>
+                </div>
+            </div>
+            <div class="featured-products">
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="assets/images/main/feature_product_1.jpg" alt="">
+                    </div>
+                    <div class="product-text">
+                        <div class="product-text-title">
+                            <h2><a class="link" href="#">Xiaomi Mi Notebook Pro</a></h2>
+                        </div>
+                        <div class="product-text-subtitle">
+                            <p>2387,69 р.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="assets/images/main/feature_product_2.jpg" alt="">
+                    </div>
+                    <div class="product-text">
+                        <div class="product-text-title">
+                            <h2><a class="link" href="#">ASUS ZenBook Flip 14</a></h2>
+                        </div>
+                        <div class="product-text-subtitle">
+                            <p>3375,02 р.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="assets/images/main/feature_product_3.jpg" alt="">
+                    </div>
+                    <div class="product-text">
+                        <div class="product-text-title">
+                            <h2><a class="link" href="#">Surface Laptop Go</a></h2>
+                        </div>
+                        <div class="product-text-subtitle">
+                            <p>1428,96 р.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="advantage">
+                <div class="advantage-item">
+                    <div class="icons">
+                        <img src="assets/images/main/icon1.png" alt="">
+                    </div>
+                    <div class="advan-title">Гарантия возврата денег</div>
+                    <div class="adv-subtitle">Вы всегда можете отказаться от товара и вернуть деньги</div>
+                </div>
+                <div class="advantage-item">
+                    <div class="icons">
+                        <img src="assets/images/main/icon2.png" alt="">
+                    </div>
+                    <div class="advan-title">Бесплатная доставка</div>
+                    <div class="adv-subtitle">Бесплатная доставка по городу. Выгодные условия доставки по всей стране</div>
+                </div>
+                <div class="advantage-item">
+                    <div class="icons">
+                        <img src="assets/images/main/icon3.png" alt="">
+                    </div>
+                    <div class="advan-title">гарантированная поддержка</div>
+                    <div class="adv-subtitle">готовы оказать помощь 24/7</div>
+                </div>
+                <div class="advantage-item">
+                    <div class="icons">
+                        <img src="assets/images/main/icon4.png" alt="">
+                    </div>
+                    <div class="advan-title">Надежная гарантия</div>
+                    <div class="adv-subtitle">Всегда выполняем гарантийные обязательства</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <div class="footer-col-title">О нас</div>
+                    <div class="footer-nav">
+                        <div class="footer-nav-link">
+                            <a class="footer-nav-link" href="#">Кто мы</a>
+                            <a class="footer-nav-link" href="#">Работать с нами</a>
+                            <a class="footer-nav-link" href="#">Стать поставщиком</a>
+                            <a class="footer-nav-link" href="#">Наши устройства</a>
+                            <a class="footer-nav-link" href="#">Партнерская программа</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Полезные ссылки</div>
+                <div class="footer-nav">
+                    <div class="footer-nav-link">
+                        <a class="footer-nav-link" href="#">Связаться с нами</a>
+                        <a class="footer-nav-link" href="#">FAQs</a>
+                        <a class="footer-nav-link" href="#">Условия и положения</a>
+                        <a class="footer-nav-link" href="#">Политика возврата</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Онлайн шоппинг</div>
+                <div class="footer-nav">
+                    <div class="footer-nav-link">
+                        <a class="footer-nav-link" href="#">Подарочные карты</a>
+                        <a class="footer-nav-link" href="#">Электроника</a>
+                        <a class="footer-nav-link" href="#">Аксессуары</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Мы в соцсетях</div>
+                <div class="footer-nav">
+                    <div class="footer-nav-link">
+                        <a class="footer-nav-link" href="#">Facebook</a>
+                        <a class="footer-nav-link" href="#">Instagram</a>
+                        <a class="footer-nav-link" href="#">Twitter</a>
+                        <a class="footer-nav-link" href="#">VK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright © 2021 <span>iCore.com</span>. All rights reserved.</div>
+    </div>
+</footer>
+
+</body>
+</html>
