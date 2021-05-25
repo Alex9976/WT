@@ -1,0 +1,297 @@
+@import "header.css";
+@import "footer.css";
+
+body {
+    margin: 0;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Header */
+.header {
+    background: url("../images/main/intro_bg.jpg") center
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    width: 100%;
+    padding: 15px 0;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+.main-block {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Contacts */
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.contacts h1 {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.contacts p {
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/* Contact form */
+
+.contact-form {
+    padding: 15px;
+    width: 500px;
+}
+
+.form-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.send-button {
+    font-size: 16px;
+    background-color: #ff5353;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.send-button-newsletter {
+    font-size: 16px;
+    background-color: #ff5353;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.send-button:hover {
+    transition: background 0.2s linear, color 0.2s linear;
+    color: white;
+}
+
+.send-button-newsletter:hover {
+    transition: background 0.2s linear, color 0.2s linear;
+    color: white;
+}
+
+.submit:hover {
+    opacity:1;
+}
+
+a {
+    color: dodgerblue;
+}
+
+/* Copyright */
+
+.copyright {
+    margin: 10px auto;
+    color: black;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+
+    border-top: 1px solid #b3dcfc;
+
+}
+
+.copyright span {
+    color: #ff5353;
+}
+
+@media (min-width:  1700px) {
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+
+/* Tablets */
+
+@media (max-width:  850px) {
+
+
+    .main-block {
+        display: inline;
+        margin: 0 auto;
+    }
+
+    .contacts {
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+
+    .form-title {
+        text-align: center;
+    }
+
+    .main-block iframe {
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+}
+
+/* Phones */
+
+@media (max-width:  480px) {
+
+
+
+    .container {
+        padding: 0;
+    }
+
+    .main-block {
+        display: inline;
+        margin: 0 auto;
+    }
+
+    /* Contact form */
+
+    .contact-form {
+        padding: 15px;
+        width: 400px;
+    }
+
+    .contacts {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .form-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+
+    .main-block iframe {
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .contacts {
+        margin-bottom: 10px;
+    }
+
+    /* Footer */
+
+    .footer {
+        margin: 30px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 35px;
+        width: 100%;
+        background: #90c8f5;
+    }
+
+    .footer-inner {
+        margin: 0 10px;
+        display: flex;
+        justify-content: space-around;
+        vertical-align: center;
+    }
+
+    .footer-col {
+        margin: 0 5px;
+    }
+
+    .footer-col-title {
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .footer-nav {
+        line-height: 2;
+        font-size: 12px;
+        font-weight: 300;
+        color: black;
+    }
+
+    .footer-nav-link {
+
+        vertical-align: top;
+        margin: 5px 0;
+
+        color: black;
+        text-decoration: none;
+
+        transition: color 0.2s linear;
+    }
+
+}

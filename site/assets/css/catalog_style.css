@@ -1,0 +1,284 @@
+@import "header.css";
+@import "footer.css";
+
+body {
+  margin: 0;
+  /*font-family: 'Dancing Script', cursive;*/
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Header */
+.header {
+  background: url("../images/main/intro_bg.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  width: 100%;
+  padding: 15px 0;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.catalog-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Filter */
+
+.filter li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: black;
+}
+
+.filter ul {
+  padding-inline-start: 0;
+}
+
+.filter {
+  padding-right: 40px;
+  border-right: 2px solid #b3dcfc;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.filter-category {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.filter label {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* Product */
+
+.products {
+  width: 100%;
+  margin-left: 15px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.product-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.product-header {
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.product-cost {
+  text-align: right;
+  margin-left: auto;
+  width: 170px;
+  margin-right: 40px;
+  padding-left: 10px;
+}
+
+.product-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.product-title a {
+  color: black;
+  text-decoration: none;
+}
+
+.product-title:hover {
+  text-decoration: underline;
+}
+
+.buy-button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 7px 25px;
+  background: #ff5353;
+  border: solid #ff5353;
+  border-radius: 3px;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.buy-button:hover {
+  transition: background 0.2s linear, color 0.2s linear;
+  color: white;
+}
+
+/* Tablets */
+
+@media (max-width: 770px) {
+  .filter {
+    display: none;
+  }
+
+  .product-title {
+    font-size: 15px;
+  }
+
+  .product-description {
+    font-size: 12px;
+  }
+}
+
+/* Phones */
+
+@media (max-width: 480px) {
+  .product-section {
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  .product-title {
+    font-size: 15px;
+  }
+
+  .product-description {
+    font-size: 12px;
+  }
+
+  .product-cost {
+    text-align: center;
+    margin: 5px auto;
+  }
+
+  .products {
+    margin-left: 0;
+  }
+
+  .buy-button {
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+
+  .footer {
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 35px;
+    width: 100%;
+    background: #90c8f5;
+  }
+
+  .footer-inner {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: center;
+  }
+
+  .footer-col {
+    margin: 0 5px;
+  }
+
+  .footer-col-title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .footer-nav {
+    line-height: 2;
+    font-size: 12px;
+    font-weight: 300;
+    color: black;
+  }
+
+  .footer-nav-link {
+    vertical-align: top;
+    margin: 5px 0;
+
+    color: black;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+  }
+}
+
+.voting-submit {
+  font-size: 16px;
+  background-color: #ff5353;
+  color: black;
+  padding: 12px 5px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 130px;
+  opacity: 0.9;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.voting-header {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vote-elements {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.vote-result {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
